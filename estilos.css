@@ -1,3 +1,5 @@
+/*HEADER DOWN*/
+
 body{
 	margin:0;
 	font-family: 'Poppins', sans-serif;
@@ -55,7 +57,7 @@ h2 {
 }
 
 
-.contenedor-titulo a {
+.contenedor-titulo a, #sobre-mi a {
 	font-size: 14px;
 	color: #fff;
 	background: #5cb8ff;
@@ -71,4 +73,23 @@ p.logo{
 
 nav ul li a{
 	color: #fff;
+}
+
+
+/*MAIN DOWN*/
+
+h3{
+	text-align: center;
+	font-size: 55px;
+	font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+#sobre-mi .texto{
+	width: 40%;
 }
