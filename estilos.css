@@ -14,7 +14,7 @@ header ul{
 	display: flex;
 }
 
-header ul li {
+header ul li{
 	list-style: none;
 	margin-right:15px;
 }
@@ -140,3 +140,48 @@ h3{
 	float: right;
 }
 
+
+/*MIS TRABAJOS */
+button.owl-prev, button.owl-next{
+	font-size: 40px !important;
+}
+
+span{
+	color: #71bcfa;
+}
+
+#mis-trabajos p {
+	text-align: center;
+	color: #000;
+}
+
+
+/* PORQUE TRABAJAR CONMIGO*/
+
+.contenedor-trabajar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#porque-trabajar .item{
+	width: 28%;
+	text-align: center;
+}
+
+
+#porque-trabajar ul li{
+list-style: none;
+}
+
+#porque-trabajar ul li:nth-child(2) {
+	font-weight: bold;
+	font-size: 19px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+
+}
+
+#porque-trabajar ul li:nth-child(3){
+	line-height: 31px;
+}
