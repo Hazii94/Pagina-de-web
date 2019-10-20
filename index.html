@@ -10,6 +10,10 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="owl/owl.carousel.min.css">
+
+	<link rel="stylesheet" href="owl/owl.theme.default.min.css">
+
 
 </head> 
 <body>
@@ -124,7 +128,55 @@
 				</div>
 			</div>
 		</section>
+
+
+		<section id="mis-trabajos">
+			<div class="contenedor">
+				<h3>Mis Trabajos</h3>
+				<div class="owl-carousel owl-theme">
+    				<div class="item"><img src="imagenes/chaia.jpg"></div>
+    				<div class="item"><img src="imagenes/isip.jpg"></div>
+    				<div class="item"><img src="imagenes/sassy.jpg"></div>
+    				<div class="item"><img src="imagenes/alimentar.jpg"></div>
+    				<div class="item"><img src="imagenes/chaia.jpg"></div>
+    				<div class="item"><img src="imagenes/isip.jpg"></div>
+    				<div class="item"><img src="imagenes/sassy.jpg"></div>
+    				<div class="item"><img src="imagenes/alimentar.jpg"></div>
+    			</div>
+			</div>
+		</section>
 	</main>
+
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="owl/owl.carousel.min.js"></script>
+
+
+	<script>
+		$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+	</script>
+
+	
 
 </body>
 </html>
