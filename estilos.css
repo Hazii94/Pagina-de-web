@@ -57,7 +57,7 @@ h2 {
 }
 
 
-.contenedor-titulo a, #sobre-mi a {
+.contenedor-titulo a, #sobre-mi a, #blog a {
 	font-size: 14px;
 	color: #fff;
 	background: #5cb8ff;
@@ -184,4 +184,45 @@ list-style: none;
 
 #porque-trabajar ul li:nth-child(3){
 	line-height: 31px;
+}
+
+/* Blog*/
+
+#blog{
+	background:#f9fafc;
+}
+
+#blog .contenedor-publicaciones{
+	display: flex;
+	justify-content: space-around;
+}
+
+#blog .publicacion{
+	width: 30%;
+	box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img{
+	width: 100%
+}
+
+#blog .contenido{
+	background:#fff;
+	padding: 20px;
+}
+
+#blog h4{
+	font-size: 23px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+#blog p{
+	color: #5a6169;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+#blog a {
+	width: 70px;
 }
