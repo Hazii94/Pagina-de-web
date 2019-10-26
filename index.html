@@ -3,7 +3,7 @@
 <head>
 	
 	<title>Haziel Saavedra</title>
-
+	
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" href="estilos.css">
@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="owl/owl.theme.default.min.css">
 
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 
 </head> 
 <body>
@@ -24,15 +25,15 @@
 			<div class="contenedor">
 				
 				<p class="logo">HAZIEL SAAVEDRA</p>
-				
+				<img class="menu-icon" src="imagenes/menu.png">
 				<nav>
-					<ul>
-						<li><a href="">Sobre mi</a></li>
-						<li><a href="">Servicios</a></li>
-						<li><a href="">Mis Trabajos</a></li>
-						<li><a href="">¿Porque Trabajar Conmingo?</a></li>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Contacto</a></li>
+					<ul class="lista-menu">
+						<li><a href="#sobre-mi">Sobre mi</a></li>
+						<li><a href="#servicios">Servicios</a></li>
+						<li><a href="#mis-trabajos">Mis Trabajos</a></li>
+						<li><a href="#porque-trabajar">¿Porque Trabajar Conmingo?</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contacto">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -147,7 +148,7 @@
 		</section>
 
 
-		<section id="porque-trabajar">
+		<section id="por-que-trabajar">
 			<div class="contenedor">
 				<h3>¿Porque Trabajar Conmigo?</h3>
 				<div class="contenedor-trabajar">
@@ -276,6 +277,40 @@
     }
 })
 	</script>
+
+	<script>
+
+$(document).ready(function(){
+
+$(window).scroll(function(){
+  scroll = $(window).scrollTop();
+  if (scroll > 100) {
+    $('.menu').css({"position":"fixed"});
+    $('.menu').css({"width":"100%"});
+    $('.menu').css({"top":"0"});
+    $('.menu').css({"background":"#fff"});
+    $('.menu a').css({"color":"#000"});
+    $('.logo').css({"color":"#000"});
+    $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
+    $('.menu').css({"z-index":"100"});
+  } else {
+    $('.menu').css({"position":"relative"});
+    $('.menu').css({"background":"transparent"});
+    $('.menu').css({"box-shadow":"0 0 0"});
+    $('.menu a').css({"color":"#fff"});
+    $('.logo').css({"color":"#fff"});
+  }
+})
+
+$('.menu-icon').click(function(){
+  $('header nav').slideToggle();
+})
+
+})
+
+
+
+</script>
 
 	
 
